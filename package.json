@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^2.2.8",
+    "node-sql-parser": "^4.0.2",
     "vue": "^3.2.16",
     "vue-router": "^4.0.12"
   },

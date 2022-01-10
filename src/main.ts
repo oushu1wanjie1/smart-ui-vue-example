@@ -1,4 +1,9 @@
-import { createApp } from 'vue'
+import {createApp, h} from 'vue'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import { Form, FormItem, Spin } from 'ant-design-vue'
+// @ts-ignore
+import DefaultSpin from './SmartUI/helper/DefaultSpin.vue'
+Spin.setDefaultIndicator({
+  indicator: DefaultSpin
+})
+createApp(App).use(Form).use(Spin).mount('#app')
