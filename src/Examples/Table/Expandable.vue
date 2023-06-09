@@ -41,20 +41,20 @@ const expanded = ref([])
 <template>
   <x-card title="可展开">
     <p>当表格内容较多不能一次性完全展示时。</p>
-  </x-card>
-  <x-divider></x-divider>
-  <x-table-next :columns="columns" :data-source="data">
-    <template #bodyCell="{ column }">
-      <template v-if="column.key === 'action'">
-        <a>Delete</a>
+    <x-divider></x-divider>
+    <x-table-next :columns="columns" :data-source="data">
+      <template #bodyCell="{ column }">
+        <template v-if="column.key === 'action'">
+          <a>Delete</a>
+        </template>
       </template>
-    </template>
-    <template #expandedRowRender="{ record }">
-      <p style="margin: 0">
-        {{ record.description }}
-      </p>
-    </template>
-  </x-table-next>
+      <template #expandedRowRender="{ record }">
+        <p style="margin: 0">
+          {{ record.description }}
+        </p>
+      </template>
+    </x-table-next>
+  </x-card>
 </template>
 
 <style scoped lang="scss">
