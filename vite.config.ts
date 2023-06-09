@@ -4,11 +4,20 @@ import * as path from 'path'
 import Components from 'unplugin-vue-components/vite'
 import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
 import { resolve } from 'path'
+import { modifyVars } from './src/smart-ui-vue/constant'
+import { svgBuilder } from './svg-builder'
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
+    svgBuilder('./src/smart-ui-vue/assets/icons/', '', (filePath, name) => {
+      const newPath = filePath.split(path.sep).join('/')
+      let svgname = newPath.substring(newPath.indexOf('icons/')).replace('icons/', 'smart-ui/')
+      svgname = svgname + name.replace('.svg', '')
+      return svgname
+    }),
     Components({
       resolvers: [
         AntDesignVueResolver()
@@ -21,6 +30,14 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, '/src')
+    }
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        modifyVars: modifyVars,
+        javascriptEnabled: true
+      }
     }
   },
   build: {

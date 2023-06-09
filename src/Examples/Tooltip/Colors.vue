@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import XTooltip from '../../SmartUI/XTooltip.vue'
-import XButton from '../../SmartUI/XButton.vue'
-import XCard from '../../SmartUI/XCard.vue'
+import XTooltip from '../../smart-ui-vue/XTooltip.vue'
+import XButton from '../../smart-ui-vue/XButton.vue'
+import XCard from '../../smart-ui-vue/XCard.vue'
 import { colors } from './code'
-import XDivider from '../../SmartUI/XDivider.vue'
+import XDivider from '../../smart-ui-vue/XDivider.vue'
 export default {
   name: 'Colors',
   components: { XDivider, XCard, XButton, XTooltip },

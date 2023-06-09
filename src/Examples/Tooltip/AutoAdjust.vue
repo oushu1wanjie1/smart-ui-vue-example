@@ -25,11 +25,11 @@
 </template>
 <script lang="ts">
 import { defineComponent } from 'vue'
-import XCard from '../../SmartUI/XCard.vue'
-import XTooltip from '../../SmartUI/XTooltip.vue'
-import XButton from '../../SmartUI/XButton.vue'
+import XCard from '../../smart-ui-vue/XCard.vue'
+import XTooltip from '../../smart-ui-vue/XTooltip.vue'
+import XButton from '../../smart-ui-vue/XButton.vue'
 import { autoAdjust } from './code'
-import XDivider from '../../SmartUI/XDivider.vue'
+import XDivider from '../../smart-ui-vue/XDivider.vue'
 const wrapStyles: Record<string, string> = {
   overflow: 'hidden',
   position: 'relative',

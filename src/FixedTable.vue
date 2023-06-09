@@ -7,7 +7,7 @@
 </template>
 <script>
 import { defineComponent, onMounted } from 'vue'
-import XTable from './SmartUI/XTable.vue'
+import XTable from './smart-ui-vue/XTable.vue'
 const columns = [
   {
     title: 'Full Name',

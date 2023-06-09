@@ -33,7 +33,7 @@
 </template>
 <script>
 import { defineComponent } from 'vue'
-import XTable from './SmartUI/XTable.vue'
+import XTable from './smart-ui-vue/XTable.vue'
 const data = [
   {
     key: '1',

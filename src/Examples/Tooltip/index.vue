@@ -11,8 +11,8 @@
 
 <script lang="ts">
 import BaseUsage from './BaseUsage.vue'
-import XCard from '../../SmartUI/XCard.vue'
-import XDivider from '../../SmartUI/XDivider.vue'
+import XCard from '../../smart-ui-vue/XCard.vue'
+import XDivider from '../../smart-ui-vue/XDivider.vue'
 import Position from './Position.vue'
 import ArrowPoint from './ArrowPoint.vue'
 import Colors from './Colors.vue'

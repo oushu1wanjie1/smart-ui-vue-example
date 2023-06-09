@@ -19,8 +19,8 @@
 </template>
 
 <script>
-import XAnchor from './SmartUI/XAnchor.vue'
-import XAnchorLink from './SmartUI/XAnchorLink.vue'
+import XAnchor from './smart-ui-vue/XAnchor.vue'
+import XAnchorLink from './smart-ui-vue/XAnchorLink.vue'
 export default {
   components: { XAnchor, XAnchorLink },
   setup() {

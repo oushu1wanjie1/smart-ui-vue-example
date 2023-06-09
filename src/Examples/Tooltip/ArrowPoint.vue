@@ -26,10 +26,10 @@
 
 <script>
 import { arrowPoint } from './code'
-import XCard from '../../SmartUI/XCard.vue'
-import XTooltip from '../../SmartUI/XTooltip.vue'
-import XDivider from '../../SmartUI/XDivider.vue'
-import XButton from '../../SmartUI/XButton.vue'
+import XCard from '../../smart-ui-vue/XCard.vue'
+import XTooltip from '../../smart-ui-vue/XTooltip.vue'
+import XDivider from '../../smart-ui-vue/XDivider.vue'
+import XButton from '../../smart-ui-vue/XButton.vue'
 
 export default {
   name: 'ArrowPoint',

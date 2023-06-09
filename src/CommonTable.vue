@@ -39,7 +39,7 @@
 <script>
 import { SmileOutlined, DownOutlined } from '@ant-design/icons-vue'
 import { defineComponent } from 'vue'
-import XTable from './SmartUI/XTable.vue'
+import XTable from './smart-ui-vue/XTable.vue'
 const columns = [
   {
     dataIndex: 'name',
