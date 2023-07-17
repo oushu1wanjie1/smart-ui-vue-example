@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# --no-install: 让 npx 强制使用本地模块，不下载远程模块
+# 启用 lint-staged 执行 lint 任务（详见 .lintstagedrc.js 文件）
+npx --no-install lint-staged

@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# --no-install: 让 npx 强制使用本地模块，不下载远程模块
+# 启用 commitlint 检查 commit message（详见 commitlint.config.js 文件）
+npx --no-install commitlint --edit "$1"
