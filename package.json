@@ -4,8 +4,9 @@
   "main": "dist/smart-ui.es.js",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "build": "vite build",
+    "serve": "vite preview",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@highlightjs/vue-plugin": "^2.1.0",
@@ -24,6 +25,8 @@
     "vue-router": "^4.0.12"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.6",
+    "@commitlint/config-conventional": "^17.6.6",
     "@types/codemirror": "^5.60.5",
     "@types/node": "^16.11.6",
     "@types/prismjs": "^1.26.0",
@@ -33,12 +36,15 @@
     "@vue/eslint-config-typescript": "^9.0.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.32.0",
+    "eslint-config-lava-fe": "latest",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.1",
     "eslint-plugin-vue": "^8.0.3",
+    "husky": "^8.0.3",
     "less": "^4.1.3",
+    "lint-staged": "^13.2.3",
     "rollup-plugin-svg-sprites": "^1.2.5",
     "sass": "^1.43.4",
     "typescript": "^4.4.3",
